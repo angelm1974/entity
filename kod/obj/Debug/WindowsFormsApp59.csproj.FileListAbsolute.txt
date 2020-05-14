@@ -1,0 +1,11 @@
+C:\Users\mariu\Downloads\wsb\kod\bin\Debug\WindowsFormsApp59.exe.config
+C:\Users\mariu\Downloads\wsb\kod\bin\Debug\WindowsFormsApp59.exe
+C:\Users\mariu\Downloads\wsb\kod\bin\Debug\WindowsFormsApp59.pdb
+C:\Users\mariu\Downloads\wsb\kod\obj\Debug\WindowsFormsApp59.Form1.resources
+C:\Users\mariu\Downloads\wsb\kod\obj\Debug\WindowsFormsApp59.Properties.Resources.resources
+C:\Users\mariu\Downloads\wsb\kod\obj\Debug\WindowsFormsApp59.csproj.GenerateResource.cache
+C:\Users\mariu\Downloads\wsb\kod\obj\Debug\WindowsFormsApp59.csproj.CoreCompileInputs.cache
+C:\Users\mariu\Downloads\wsb\kod\obj\Debug\WindowsFormsApp59.exe
+C:\Users\mariu\Downloads\wsb\kod\obj\Debug\WindowsFormsApp59.pdb
+C:\Users\mariu\Downloads\wsb\kod\obj\Debug\WindowsFormsApp59.csprojAssemblyReference.cache
+C:\Users\mariu\Downloads\wsb\kod\obj\Debug\WindowsFormsApp59.exe.licenses

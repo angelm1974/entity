@@ -26,14 +26,16 @@ namespace WindowsFormsApp59
             klikniety = new Pilot(this);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(klikniety.KlawiszDol);
             Pilot Vectra = new Pilot(ZnaneKolory.Zielony, 33);
-            zaladujZwierzeta();
+                        zaladujZwierzeta();
          }
 
         private void zaladujZwierzeta()
         {
             Zwierze wielblad = new Zwierze(2, 600, Color.Black,25, "Mustafa", true);
             Zwierze krowa = new Zwierze(2, 800, Color.WhiteSmoke, 18, "Mućka", false);
-
+            krowa.jedzenie.Add(new Pozywienie() { Kalorycznosc = 100, Ilosc = 43, Nazwa = "Jabłka" });
+            krowa.jedzenie.Add(new Pozywienie() { Kalorycznosc = 130, Ilosc = 243, Nazwa = "Banany" });
+            wielblad.jedzenie.Add(new Pozywienie() { Kalorycznosc = 530, Ilosc = 663, Nazwa = "Daktyle" });
             listaSsakow.Add("wielbłąd 01", wielblad);
             listaSsakow.Add("krowa 01", krowa);
         }
@@ -48,11 +50,17 @@ namespace WindowsFormsApp59
                 zwierzeGrid.Add(item.Value);
             }
             zwierzeBindingSource.DataSource = zwierzeGrid.ToList();
+            
           //  dataGridView1.DataSource = zwierzeGrid.ToList();
             
             
             //MessageBox.Show(klikniety.key);
         }
 
+        private void zwierzeBindingSource_PositionChanged(object sender, EventArgs e)
+        {
+            var aktualny = zwierzeBindingSource.Current;
+            pozywienieBindingSource.DataSource = ((Zwierze)aktualny).jedzenie.ToList(); 
+        }
     }
 }

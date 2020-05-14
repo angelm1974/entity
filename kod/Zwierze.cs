@@ -9,6 +9,7 @@ namespace WindowsFormsApp59
 {
     class Zwierze
     {
+        
         public Zwierze()
         {
 
@@ -22,6 +23,7 @@ namespace WindowsFormsApp59
             Wiek = wiek;
             Nazwa = nazwa;
             Plec = plec;
+
         }
 
         public int Wysokosc { get; set; }
@@ -30,6 +32,7 @@ namespace WindowsFormsApp59
         public int Wiek { get; set; }
         public string Nazwa { get; set; }
         public bool Plec { get; set; }
+        public List<Pozywienie> jedzenie = new List<Pozywienie>();  
     }
 
 
